@@ -3,7 +3,7 @@
 //Sulutus ei ole pakollista:
 let f(x,y) = x+y
 let g x y  = x+y
- 
+
 //Funktion tyyppi:
 let I x = x
 //     x: a
@@ -37,15 +37,15 @@ let moi = vakioMoi 123
 //function composition
 let yhdistä1 f g x = g(f x)
 let yhdistä2 f g x = (f >> g) x
- 
+
 //val yhdistä1 : ('a -> 'b) -> ('b -> 'c) -> 'a -> 'c
 //val yhdistä2 : ('a -> 'b) -> ('b -> 'c) -> 'a -> 'c
 
 
 let yhdistä3 f g = (f >> g)
- 
+
 
 //käytännön esimerkki:
 //let käsittele = (tallenna >> validoi >> lähetä)
 
- 
+

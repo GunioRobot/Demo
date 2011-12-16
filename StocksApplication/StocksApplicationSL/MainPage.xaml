@@ -54,7 +54,7 @@
                         </ei:ChangePropertyAction>
                     </i:EventTrigger>
                 </i:Interaction.Triggers>
-                <sdk:DataGrid x:Name="Lista" 
+                <sdk:DataGrid x:Name="Lista"
 					ItemsSource="{Binding Rates}" Height="208" Width="466" HorizontalAlignment="Left" VerticalAlignment="Top" AutoGenerateColumns="False">
                     <sdk:DataGrid.Columns>
                         <sdk:DataGridTextColumn Header="Date" Binding="{Binding Date, StringFormat='dd.MM.yyyy'}"/>

@@ -2,7 +2,7 @@
 
 open System;
 
-type PresentationKeeper(name: string, employer : string) = 
+type PresentationKeeper(name: string, employer : string) =
         member lollis.name = name
         member fuulis.employer = employer
         override this.ToString() = name + ", " + employer
@@ -18,7 +18,7 @@ let topics = [ (2, "Functional programming from c# perspective, Linq principles"
 
 let formatTopic topic keeper = String.Format ("{0} ({1})", topic, keeper.ToString())
 
-let pimpTheList = topics |> Seq.sortBy (fun (prio,_,_) -> prio) 
+let pimpTheList = topics |> Seq.sortBy (fun (prio,_,_) -> prio)
                          |> Seq.map (fun (_, a, b) -> a,b)
                          |> Seq.map (fun x -> (formatTopic (fst x) (snd x)))
 

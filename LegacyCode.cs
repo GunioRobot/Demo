@@ -31,7 +31,7 @@ namespace ClassLibrary1
         {
             char mark = '\n';
             char mark2 = ',';
-            
+
             List<List<string>> result = new List<List<string>>();
 
             foreach (string datedata in data.Split(mark))
@@ -51,21 +51,21 @@ namespace ClassLibrary1
 
         private List<Tuple<DateTime, double>> ReFormat(List<List<string>> list)
         {
-            
+
             list.RemoveAt(0);
-            
+
             List<Tuple<DateTime, double>> result = new List<Tuple<DateTime,double>>();
- 
+
             foreach(var sublist in list){
-                
+
                 string date = sublist[0];
                 string rate = sublist[4];
 
                 DateTime parseDate = DateTime.ParseExact(date, "yyyy-mm-dd", CultureInfo.InvariantCulture);
                 double parseRate = Double.Parse(rate, CultureInfo.GetCultureInfo("en-US"));
-                
+
                 result.Add(new Tuple<DateTime, double>(parseDate, parseRate));
-                
+
             }
 
             return result;

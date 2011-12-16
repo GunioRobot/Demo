@@ -44,7 +44,7 @@ namespace ClassLibrary1
         private IEnumerable<Tuple<DateTime, double>> ReFormat(IEnumerable<IEnumerable<string>> list)
         {
 
-            Func<string, DateTime> parseDate = 
+            Func<string, DateTime> parseDate =
                 dt => DateTime.ParseExact(dt, "yyyy-mm-dd", CultureInfo.InvariantCulture);
 
             Func<string, double> parseRate = rt => Double.Parse(rt, CultureInfo.GetCultureInfo("en-US"));
@@ -52,7 +52,7 @@ namespace ClassLibrary1
             var result = from sublist in list.Skip(1)
                          select new Tuple<DateTime, double>
                          (parseDate(sublist.ElementAt(0)), parseRate(sublist.ElementAt(4)));
-            
+
             return result;
         }
 

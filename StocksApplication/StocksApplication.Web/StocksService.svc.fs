@@ -36,6 +36,6 @@ type StocksService =
                 //failwith("GetResult returned error");
                 let tmp = { Date = todate; Rate = -1.0 }
                 List.toSeq [tmp]
-       
+
     // example: http://localhost:49624/StocksService.svc/Symbol/MSFT/20100905/20100910
 

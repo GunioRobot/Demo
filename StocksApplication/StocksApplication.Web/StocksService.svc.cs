@@ -25,7 +25,7 @@ namespace StocksApplication.Web
 
             var uri = Stocks.MakeUrl(quote, fromdate, todate);
 
-            try { 
+            try {
                 return Stocks.GetResult(uri);
             }catch(System.Net.WebException){
                 //throw;

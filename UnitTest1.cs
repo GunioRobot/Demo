@@ -46,7 +46,7 @@ namespace TestProject3
         public void TestMethodLegacyCode()
         {
             var l = new LegacyCode();
-            var url = LegacyCode.MakeUrl("MSFT", 
+            var url = LegacyCode.MakeUrl("MSFT",
                         new DateTime(2000,9,15),
                         new DateTime(2000,10,18)
                       );
@@ -54,8 +54,8 @@ namespace TestProject3
 
             var closerate = l.DateMaxClose(res);
             Assert.IsTrue(closerate.Item2 > 20);
-            
+
         }
-                
+
     }
 }

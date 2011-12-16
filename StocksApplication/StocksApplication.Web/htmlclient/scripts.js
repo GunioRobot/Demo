@@ -1,4 +1,4 @@
-$(document).ready(function() 
+$(document).ready(function()
 {
     //Debug:
     function concatObject(obj) {
@@ -12,10 +12,10 @@ $(document).ready(function()
 
 
     Date.prototype.formatDDMMYYYYPlus = function(){
-         return this.getDate() + "." + (this.getMonth()+1) + "." + this.getFullYear(); 
+         return this.getDate() + "." + (this.getMonth()+1) + "." + this.getFullYear();
     }
     Date.prototype.formatDDMMYYYYMinus = function(){
-         return this.getDate() + "." + (this.getMonth()-1) + "." + this.getFullYear(); 
+         return this.getDate() + "." + (this.getMonth()-1) + "." + this.getFullYear();
     }
 
     function toyyyymmdd(str){
@@ -23,7 +23,7 @@ $(document).ready(function()
         function prezero(num){
            if(num.length<2)return "0"+num;
            else return num;
-        }       
+        }
         return nums[2] + prezero(nums[1]) + prezero(nums[0]);
     };
 

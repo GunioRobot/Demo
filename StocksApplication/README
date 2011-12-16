@@ -1,5 +1,5 @@
 
-This is technical demo to apply F-Sharp (F#) language in real world application. 
+This is technical demo to apply F-Sharp (F#) language in real world application.
 This application is close to real world enterprise application (with very optimal solutions, at least in 2011).
 
 The function of this application is to get Stock Quote Data and Historical Stock Prices from Yahoo Finance
@@ -7,7 +7,7 @@ The function of this application is to get Stock Quote Data and Historical Stock
 
 Architecture visaul presentation: Architecture.pptx
 
-There are two web user interfaces: 
+There are two web user interfaces:
 1. Silverlight 5.0 MVVM made with Expression Blend
    - Silverlight F# 2.0 ViewModel and client logics dll
 2. HTML 5.0 + jQuery 1.6.1 + Javascript (Ajax)
